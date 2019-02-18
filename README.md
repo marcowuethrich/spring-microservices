@@ -1,6 +1,6 @@
 # Spring MicroService Dev Environment
 
-This Repository is for learning the concepts of Spring MicroServices with Eureka / Feign / ConfigServer / Swagger / etc.
+This Repository shows the default concepts of Spring MicroServices with Eureka / Feign / ConfigServer / Swagger / etc.
 
 ### Next Steps
 
