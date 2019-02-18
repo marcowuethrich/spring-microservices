@@ -17,12 +17,13 @@ import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableEurekaClient
 @EntityScan(basePackages = "ch.acme.organizationservice.model")
 @EnableFeignClients(basePackages = "ch.acme.organizationservice.client")
+@EnableSwagger2
 public class OrganizationServiceApplication {
 
 	public static void main(String[] args) {
@@ -46,6 +47,4 @@ public class OrganizationServiceApplication {
 		repository.add(new Organization("Oracle", "Redwood City, California, USA"));
 		return repository;
 	}
-
-
 }
